@@ -1,0 +1,20 @@
+.liListCard {
+    list-style-type: none;
+    width: 340px;
+    height: 340px;
+    margin-bottom: 30px;
+}
+
+.listImg {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+} 
+
+.listP {
+    position: relative;
+    margin-left: 20px;
+    
+}

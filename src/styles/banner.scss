@@ -1,0 +1,23 @@
+.sectionBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionBanner div {
+    width: 1240px;
+    height: 223px;
+}
+
+.sectionBanner img {
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.sectionBanner p {
+    text-align: center;
+    position: relative;
+}

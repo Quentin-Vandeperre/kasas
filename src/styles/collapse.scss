@@ -1,0 +1,63 @@
+.sectionCollapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCollapse {
+    width: 100%;
+    height: 54px;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 20px;               /* comment changer ? ou enlever 40px pour mettre padding left et right sur le i */
+    margin: 0;
+}
+
+.sectionCollapse li {
+    width: 1023px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionCollapse ul {
+    width: 1240px;
+    background-color: #F6F6F6;
+    padding: 0;
+}
+
+.oneDivTitle {
+    width: 1023px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.fa-chevron-up {
+    color: white;
+}
+
+.pAbout {
+    width: 1023px;
+    background-color: #F6F6F6;
+    margin: 0; 
+}
+
+.box {
+    display: none;
+}
+
+.buttonCollapse {
+    border: none;
+    height: 54px;
+    background-color: #FF6060;
+    transform: rotate(0deg);
+}
+
+
+
+
+

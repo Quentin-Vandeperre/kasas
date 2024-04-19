@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px; 
+}
+
+.logo {
+    width: 210.32px;
+    height: 68px;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+a:nth-child(1) {
+    margin:0 30px;
+}
