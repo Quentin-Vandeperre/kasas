@@ -1,20 +1,26 @@
-.liListCard {
-    list-style-type: none;
-    width: 340px;
-    height: 340px;
-    margin-bottom: 30px;
-}
+.sectionCard {
 
-.listImg {
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
-    position: absolute;
-    border-radius: 10px;
-} 
-
-.listP {
-    position: relative;
-    margin-left: 20px;
+    & .liListCard {
+        list-style-type: none;
+        width: 340px;
+        height: 340px;
+        margin-bottom: 30px;
+    }
     
+    & .listImg {
+        position: absolute;
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    } 
+    
+    & .listP {
+        display: flex;
+        align-items: end;
+        position: relative;
+        margin-left: 20px;
+        height: 320px;
+    }
 }
+

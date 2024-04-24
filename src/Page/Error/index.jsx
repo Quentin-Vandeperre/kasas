@@ -3,7 +3,7 @@ import '../../styles/error.scss'
 
 function Error() {
     return (
-      <main className="error" >
+      <main className="mainError" >
         <p className="errorType">404</p>
         <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
         <Link className="errorLink" to="/">Retourner sur la page d’accueil</Link>

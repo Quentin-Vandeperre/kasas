@@ -2,22 +2,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & div {
+        width: 1240px;
+        height: 223px;
+    }
+
+    & .imgBanner{
+        width: 1240px;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+        position: absolute;
+    }
+
+    & p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0;
+        height: 223px;
+        font-size: 48px;
+        color: white;
+    }
 }
 
-.sectionBanner div {
-    width: 1240px;
-    height: 223px;
+.mainHome {
+
+    & .imgBanner {
+        
+        filter: brightness(40%);
+    }
 }
 
-.sectionBanner img {
-    width: 1240px;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-    position: absolute;
-}
+.mainAbout {
+    
+    & .imgBanner {
+        filter: brightness(70%);
+    }
 
-.sectionBanner p {
-    text-align: center;
-    position: relative;
+    & .pBanner {
+        display: none;
+    }
 }

@@ -1,5 +1,6 @@
 import '../styles/card.scss'
 import List from './List'
+import { Link } from 'react-router-dom'
 import { housingList } from '../Data/Advertisements'
 import PropTypes from 'prop-types'
 
@@ -8,11 +9,13 @@ function Card() {
     <section className='sectionCard'>
         <ul>
             {housingList.map(({id, title, cover}) => (
+                <Link to={`/RentalSheet/${id}`}>
                 <List 
                     key={id}
                     title = {title}
                     cover = {cover}
                 />
+                </Link>
             ))
             }
         </ul>
@@ -22,7 +25,3 @@ function Card() {
   
   export default Card
 
-  Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    cover: PropTypes.string,
-  }

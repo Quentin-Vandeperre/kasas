@@ -4,7 +4,7 @@ import picture from '../../assets/Banner-img.jpeg'
 
 function Home() {
     return (
-    <main>
+    <main className='mainHome' >
         <Banner 
             picture = {picture}
         />

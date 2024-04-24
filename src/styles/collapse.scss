@@ -2,62 +2,77 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & .titleCollapse {
+        width: 100%;
+        height: 54px;
+        background-color: #FF6060;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding-left: 20px;               /* comment changer ? ou enlever 40px pour mettre padding left et right sur le i */
+        margin: 0;
+        border-radius: 5px 0 0 5px;
+    }
+
+    & ul {
+        padding: 0;
+    }
+
+    & .oneDivTitle {
+        width: 1023px;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    & .fa-chevron-up {
+        color: white;
+    }
+
+    & .pAbout {
+        width: 1003px;
+        background-color: #F6F6F6;
+        padding: 15px 10px;
+        margin: 0; 
+    }
+
+    & .box {
+        display: none;
+    }
+
+    & .buttonCollapse {
+        border: none;
+        height: 54px;
+        background-color: #FF6060;
+        transform: rotate(0deg);
+        border-radius: 0 5px 5px 0;
+    }
 }
 
-.titleCollapse {
-    width: 100%;
-    height: 54px;
-    background-color: #FF6060;
+.divCollapseRental {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    color: white;
-    padding-left: 20px;               /* comment changer ? ou enlever 40px pour mettre padding left et right sur le i */
-    margin: 0;
-}
-
-.sectionCollapse li {
-    width: 1023px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionCollapse ul {
+    align-items: baseline;
     width: 1240px;
-    background-color: #F6F6F6;
-    padding: 0;
+    
+    & ul {
+        width: 582px;
+    }
+
+    & .oneDivTitle {
+        width: 582px;
+    }
+
+    & .pAbout {
+        width: 562px;
+    }
+
+    & li {
+        list-style-type: none;
+        margin-bottom: 5px;
+    }
 }
-
-.oneDivTitle {
-    width: 1023px;
-    display: flex;
-    margin-top: 20px;
-}
-
-.fa-chevron-up {
-    color: white;
-}
-
-.pAbout {
-    width: 1023px;
-    background-color: #F6F6F6;
-    margin: 0; 
-}
-
-.box {
-    display: none;
-}
-
-.buttonCollapse {
-    border: none;
-    height: 54px;
-    background-color: #FF6060;
-    transform: rotate(0deg);
-}
-
-
 
 
 

@@ -1,0 +1,41 @@
+.sectionRating {
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+
+    & .pTags font {
+        width: 200px;
+    }
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+
+    & .tagList {
+        margin-right: 10px;
+        padding: 5px 25px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: white;
+    }
+
+    & li {
+        list-style-type: none;
+    }
+
+    & .divStar {
+        display: flex;
+    }
+
+    & .starGrey {
+        color: #E3E3E3;
+        margin-left: 10px;
+    }
+
+    & .starPink {
+        color: #FF6060;
+        margin-left: 10px;
+    }
+}
