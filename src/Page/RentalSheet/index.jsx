@@ -1,9 +1,12 @@
 import { housingList } from '../../Data/Advertisements'
 import { useParams} from "react-router-dom"   
-import Carrousel from '../../Composants/Carrousel' 
+import Carrousel from '../../Composants/Carrousel/Carrousel' 
 import Collapse from '../../Composants/Collapse'
-import DescriptionCarrousel from '../../Composants/DescriptionCarrousel' 
-import Rating from '../../Composants/Rating'
+import Tags from '../../Composants/Carrousel/Tags'
+import Picture from '../../Composants/Carrousel/Picture'
+import TitleCarrousel from '../../Composants/Carrousel/TitleCarrousel' 
+import Rating from '../../Composants/Carrousel/Rating'
+
 
 function About() {
     const { id } = useParams () ;
@@ -14,21 +17,35 @@ function About() {
         <Carrousel 
             data = {ficheLogement.pictures}
         />
-        <DescriptionCarrousel 
-            title={ficheLogement.title}
-            location={ficheLogement.location}
-            name={ficheLogement.host.name}
-            picture={ficheLogement.host.picture}
-        />
-        <Rating 
-          tags= {ficheLogement.tags.map((tag, id) => (
-          <li key={id} className="tagList">
-          {tag}
-          </li>
-          ))}
-          scaleValue = {ficheLogement.rating}
-        />
-        <div className='divCollapseRental' >
+        <div className='divDescriptionTagsPictureRating' >
+          <div className='divDescriptionTags'>
+            <TitleCarrousel 
+                title={ficheLogement.title}
+                location={ficheLogement.location}
+            />
+            
+            <Tags 
+              tags= {ficheLogement.tags.map((tag, id) => (
+                <li key={id} className="tagList">
+                {tag}
+                </li>
+                ))}
+            />
+          </div>
+          
+          <div className='divPictureRating'>
+            <Picture
+              name={ficheLogement.host.name} 
+              picture={ficheLogement.host.picture}
+            />
+
+            <Rating 
+              
+              scaleValue = {ficheLogement.rating}
+            />
+          </div>
+        </div>
+        <section className='sectionCollapse' >
           <Collapse 
               title={"Description"}
               content= {ficheLogement.description}
@@ -40,9 +57,9 @@ function About() {
                 <li key={id} className="descriptionList">
                 {equipement}
                 </li>
-                ))}
+              ))}
           />
-        </div>
+        </section>
       </main>
     )
   }

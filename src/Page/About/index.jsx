@@ -31,7 +31,7 @@ function About() {
           <Banner 
             picture = {picture}
           />
-          <ul>
+          <section className='sectionCollapse'>
             {aboutList.map((list, index)=>(
               <Collapse 
                     key = {index}
@@ -39,8 +39,7 @@ function About() {
                     content={list.content}
               />
             ))}
-          </ul>
-
+          </section>
     </main>
   )
 }

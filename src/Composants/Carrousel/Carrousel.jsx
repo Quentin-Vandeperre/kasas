@@ -1,10 +1,10 @@
-import '../styles/carrousel.scss'
+import '../../styles/Carrousel/carrousel.scss'
 import { useState } from "react";
 
     function Carrousel ({ data }){
         const [slide, setSlide] = useState(0);
 
-         const nextSlide = () => {
+        const nextSlide = () => {
         setSlide(slide === data.length - 1 ? 0 : slide + 1);
         };
 
@@ -22,8 +22,8 @@ import { useState } from "react";
       })}
       </div>
           <div className='divChevron' >
-            <i class="fa-solid fa-chevron-left" onClick={prevSlide}></i>
-            <i class="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+            <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+            <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
           </div>
       
     </section>

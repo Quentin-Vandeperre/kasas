@@ -1,0 +1,25 @@
+.sectionPicture {
+    & .divProfilOwner {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &  .nameOwner {
+        text-align: end;
+        width: 50px;
+        color: #FF6060;
+    }
+
+    & .pictureOwner {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        margin-left: 20px;
+        @media screen and (max-width: 375px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+

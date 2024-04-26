@@ -1,23 +1,37 @@
 body {
-    margin: 0;
+    margin: 0; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 0;
 
-    & div {
+    & .divHeader {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 1240px; 
+        max-width: 1240px;
+        width: 100%; 
+        margin: 0 10px;
     }
 
     & .logo {
         width: 210.32px;
         height: 68px;
+
+        @media screen and (max-width: 375px) {
+            width: 145px;
+            height: 47px;
+        }
     }
 
     & nav {
@@ -28,6 +42,10 @@ header {
         text-decoration: none;
         color: black;
         font-size: 24px;
+
+        @media screen and (max-width: 375px) {
+            font-size: 12px;
+        }
     }
 
     & a:nth-child(1) {

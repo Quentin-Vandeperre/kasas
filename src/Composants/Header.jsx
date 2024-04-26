@@ -5,7 +5,7 @@ import '../styles/header.scss'
 function Header() {
   return (
     <header>
-        <div>
+        <div className='divHeader' >
           <img src={logo} alt='logo kasa' className='logo' />
           <nav>
           <Link to="/">Accueil</Link>

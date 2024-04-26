@@ -1,78 +1,154 @@
 .sectionCollapse {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    & .titleCollapse {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1023px;
         width: 100%;
-        height: 54px;
-        background-color: #FF6060;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-        padding-left: 20px;               /* comment changer ? ou enlever 40px pour mettre padding left et right sur le i */
-        margin: 0;
-        border-radius: 5px 0 0 5px;
-    }
+        
 
-    & ul {
-        padding: 0;
-    }
+        & .divCollapse {
+            width: 100%;
+        }
+    
+        & .titleCollapse {
+            width: 100%;
+            height: 54px;
+            background-color: #FF6060;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding-left: 20px;               /* comment changer ? ou enlever 40px pour mettre padding left et right sur le i */
+            margin: 0;
+            border-radius: 5px 0 0 5px;
+        }
+    
+        & .oneDivTitle {
+            width: 100%;
+            display: flex;
+            margin-top: 20px
+        }
+    
+        & .fa-chevron-up {
+            color: white;
+        }
+    
+        & .pAbout {
+            max-width: 1003px;
+            width: auto;
+            background-color: #F6F6F6;
+            padding: 15px 10px;
+            margin: 0; 
+            transition: max-height 0.3s ease;
+        }
+          
 
-    & .oneDivTitle {
-        width: 1023px;
-        display: flex;
-        margin-top: 20px;
-    }
-
-    & .fa-chevron-up {
-        color: white;
-    }
-
-    & .pAbout {
-        width: 1003px;
-        background-color: #F6F6F6;
-        padding: 15px 10px;
-        margin: 0; 
-    }
-
-    & .box {
-        display: none;
-    }
-
-    & .buttonCollapse {
-        border: none;
-        height: 54px;
-        background-color: #FF6060;
-        transform: rotate(0deg);
-        border-radius: 0 5px 5px 0;
-    }
+        & .rotate-button {
+            border: none;
+            height: 54px;
+            background-color: #FF6060;
+            border-radius: 0 5px 5px 0;
+            transition: transform 0.3s ease;
+          }
+          
+        & .rotate-button.rotate {
+            transform: rotate(180deg);
+            border-radius: 5px 0 0 5px;
+          }       
 }
 
-.divCollapseRental {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 1240px;
-    
-    & ul {
-        width: 582px;
+.mainRental {
+
+    & .sectionCollapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+       
+        flex-wrap: wrap;
+        width: 1240px;
+        max-width: 100%;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            
+        }
     }
 
-    & .oneDivTitle {
+    & .divCollapse {
         width: 582px;
+
+        @media screen and (max-width: 1200px) {
+            max-width: 1240px;
+            width: 100%;
+        }
     }
 
     & .pAbout {
         width: 562px;
+        @media screen and (max-width: 1200px) {
+            max-width: 1240px;
+            width: auto;
+        }
     }
 
     & li {
         list-style-type: none;
         margin-bottom: 5px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // & .sectionCollapse {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: baseline;
+    //     justify-content: space-between;
+    //     max-width: 1240px;
+        
+        
+
+    //     & .divCollapse:nth-child(2) {
+    //         display: flex;
+    //         align-items: end;
+    //         justify-content: end;
+    //         flex-direction: column;
+    //     }
+
+    //     & .divCollapse {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         margin-top: 0;
+    //     }
+    // }
+
+    // & .oneDivTitle {
+    //     width: 582px;
+    // }
+
+    // & .pAbout {
+    //     width: 562px;
+    // }
+
+    // & li {
+    //     list-style-type: none;
+    //     margin-bottom: 5px;
+    // }
 }
-
-
 

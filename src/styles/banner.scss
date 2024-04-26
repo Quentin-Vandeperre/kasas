@@ -1,19 +1,17 @@
-.sectionBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & div {
-        width: 1240px;
-        height: 223px;
-    }
+.sectionBanner { 
+    max-width: 1240px;
+    height: 223px;
+    width: 100%; 
+    margin: 0 15px;
 
     & .imgBanner{
-        width: 1240px;
+        max-width: 1240px;
+        width: 100%;
         height: 223px;
         object-fit: cover;
         border-radius: 25px;
         position: absolute;
+
     }
 
     & p {
@@ -25,13 +23,18 @@
         height: 223px;
         font-size: 48px;
         color: white;
+        
+        @media screen and (max-width: 375px) {
+            font-size: 24px;
+            width: 175px;
+            margin-left: 20px;
+        }
     }
 }
 
 .mainHome {
-
+    
     & .imgBanner {
-        
         filter: brightness(40%);
     }
 }

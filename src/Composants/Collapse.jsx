@@ -4,26 +4,57 @@ import React, { useState } from "react"
 
 function Collapse({title, content}) {
     const [afficherParagraphe, setAfficherParagraphe] = useState(false);
+    const [rotation, setRotation] = useState(false);
 
         const toggleAfficherParagraphe = () => {
             setAfficherParagraphe(!afficherParagraphe);
         }
         
+        const toggleRotation = () => {
+            setRotation(!rotation);
+          };
         
     return (
-        <section className='sectionCollapse'>
-            <ul>
+            <div className='divCollapse' >
                 <div className='oneDivTitle'>
                     <h2 className='titleCollapse'>{title}</h2>
-                    <button className='buttonCollapse' onClick={toggleAfficherParagraphe}><i className="fa-sharp fa-solid fa-chevron-up"></i></button>
-                    {afficherParagraphe ? '' : ''} 
+                    <button className={`rotate-button ${rotation ? 'rotate' : ''}`} 
+                        onClick={() => {
+                        toggleAfficherParagraphe();
+                        toggleRotation();
+                        }}>
+                        <i className="fa-sharp fa-solid fa-chevron-up" ></i>
+                    </button>
+                    {afficherParagraphe ? '' : ''}  
                 </div> 
                 {afficherParagraphe && (
                     <p className='pAbout'>{content}</p>
-                )}              
-            </ul>
-        </section>
-        
+                )}          
+            </div>  
     )
   }
   export default Collapse
+
+
+
+  
+
+
+
+
+
+            // <div className='divCollapse' >
+            //     <div className='oneDivTitle'>
+            //         <h2 className='titleCollapse'>{title}</h2>
+            //         <i className={`fa-sharp fa-solid fa-chevron-up ${rotation ? 'rotate' : ''}`} 
+            //             onClick={() => {
+            //             toggleAfficherParagraphe();
+            //             toggleRotation();
+            //             }}>  
+            //         </i>
+            //         {afficherParagraphe ? '' : ''}  
+            //     </div> 
+            //     {afficherParagraphe && (
+            //         <p className='pAbout'>{content}</p>
+            //     )}          
+            // </div>  
