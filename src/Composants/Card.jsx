@@ -11,7 +11,7 @@ function Card() {
             {housingList.map(({title, cover, id}) => (
                 <Link to={`/RentalSheet/${id}`}>
                 <List 
-                    key = {id}
+                    id = {id}
                     title = {title}
                     cover = {cover}
                 />

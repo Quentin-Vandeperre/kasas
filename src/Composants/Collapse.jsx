@@ -18,18 +18,19 @@ function Collapse({title, content}) {
             <div className='divCollapse' >
                 <div className='oneDivTitle'>
                     <h2 className='titleCollapse'>{title}</h2>
-                    <button className={`rotate-button ${rotation ? 'rotate' : ''}`} 
+                    <button className="buttonCollapse">
+                        <i className={`fa-sharp fa-solid fa-chevron-up ${rotation ? 'rotate' : ''}`} 
                         onClick={() => {
                         toggleAfficherParagraphe();
                         toggleRotation();
                         }}>
-                        <i className="fa-sharp fa-solid fa-chevron-up" ></i>
+                        </i>
                     </button>
                     {afficherParagraphe ? '' : ''}  
                 </div> 
                 {afficherParagraphe && (
                     <p className='pAbout'>{content}</p>
-                )}          
+                )}           
             </div>  
     )
   }
@@ -43,18 +44,19 @@ function Collapse({title, content}) {
 
 
 
-            // <div className='divCollapse' >
-            //     <div className='oneDivTitle'>
-            //         <h2 className='titleCollapse'>{title}</h2>
-            //         <i className={`fa-sharp fa-solid fa-chevron-up ${rotation ? 'rotate' : ''}`} 
-            //             onClick={() => {
-            //             toggleAfficherParagraphe();
-            //             toggleRotation();
-            //             }}>  
-            //         </i>
-            //         {afficherParagraphe ? '' : ''}  
-            //     </div> 
-            //     {afficherParagraphe && (
-            //         <p className='pAbout'>{content}</p>
-            //     )}          
-            // </div>  
+//   <div className='divCollapse' >
+//   <div className='oneDivTitle'>
+//       <h2 className='titleCollapse'>{title}</h2>
+//       <button className={`rotate-button ${rotation ? 'rotate' : ''}`} 
+//           onClick={() => {
+//           toggleAfficherParagraphe();
+//           toggleRotation();
+//           }}>
+//           <i className="fa-sharp fa-solid fa-chevron-up" ></i>
+//       </button>
+//       {afficherParagraphe ? '' : ''}  
+//   </div> 
+//   {afficherParagraphe && (
+//       <p className='pAbout'>{content}</p>
+//   )}          
+// </div>   

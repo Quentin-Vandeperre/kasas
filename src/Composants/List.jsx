@@ -1,6 +1,5 @@
 
 import '../styles/list.scss'
-import PropTypes from 'prop-types'
 
 function List({title, cover, id}) {
     return (
