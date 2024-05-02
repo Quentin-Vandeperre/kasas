@@ -8,6 +8,7 @@ function Collapse({title, content}) {
 
         const toggleAfficherParagraphe = () => {
             setAfficherParagraphe(!afficherParagraphe);
+
         }
         
         const toggleRotation = () => {
@@ -15,11 +16,11 @@ function Collapse({title, content}) {
           };
         
     return (
-            <div className='divCollapse' >
+            <div className={`divCollapse ${afficherParagraphe ? 'pOpen' : 'pClose'}`} >
                 <div className='oneDivTitle'>
                     <h2 className='titleCollapse'>{title}</h2>
                     <button className="buttonCollapse">
-                        <i className={`fa-sharp fa-solid fa-chevron-up ${rotation ? 'rotate' : ''}`} 
+                        <i className={`fa-sharp fa-solid fa-chevron-up ${rotation ? 'rotate' : 'rotateRiverse'}`} 
                         onClick={() => {
                         toggleAfficherParagraphe();
                         toggleRotation();

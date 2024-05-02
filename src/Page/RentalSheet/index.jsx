@@ -40,7 +40,6 @@ function About() {
             />
 
             <Rating 
-              
               scaleValue = {ficheLogement.rating}
             />
           </div>

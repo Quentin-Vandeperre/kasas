@@ -37,7 +37,8 @@
             width: auto;
             background-color: #F6F6F6;
             padding: 15px 10px;
-            margin: 0; 
+            margin: 0;
+            transition: height 0.5s; 
         }
           
         & .buttonCollapse {
@@ -48,10 +49,16 @@
         }
           
         & .fa-chevron-up.rotate {
-            transform: rotate(180deg);
+            transform: rotate(-180deg);
             transition: transform 0.5s;
             border-radius: 5px 0 0 5px;
-          }       
+          } 
+          
+        & .fa-chevron-up.rotateRiverse {
+            transform: rotate(0deg);
+            transition: transform 0.5s;
+          } 
+          
 }
 
 .mainRental {

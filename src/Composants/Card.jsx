@@ -9,7 +9,7 @@ function Card() {
     <section className='sectionCard'>
         <ul>
             {housingList.map(({title, cover, id}) => (
-                <Link to={`/RentalSheet/${id}`}>
+                <Link to={`/RentalSheet/${id}`} key={id}>
                 <List 
                     id = {id}
                     title = {title}
