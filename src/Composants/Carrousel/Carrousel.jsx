@@ -21,10 +21,10 @@ import { useState } from "react";
         );
       })}
       </div>
-          <div className='divChevron' >
+          {/* <div className='divChevron' > */}
             <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
             <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
-          </div>
+          {/* </div> */}
       
     </section>
     )

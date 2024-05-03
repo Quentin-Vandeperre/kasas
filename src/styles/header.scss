@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 15px;
 
     & .divHeader {
         display: flex;
@@ -21,7 +21,7 @@ header {
         justify-content: space-between;
         max-width: 1240px;
         width: 100%; 
-        margin: 0 10px;
+        margin: 0 ;
     }
 
     & .logo {

@@ -57,8 +57,12 @@
         & .fa-chevron-up.rotateRiverse {
             transform: rotate(0deg);
             transition: transform 0.5s;
+            
           } 
           
+        & .pAbout.pOpen {
+            transition: transform 5s;
+        }
 }
 
 .mainRental {
