@@ -27,13 +27,9 @@ function Collapse({title, content}) {
                         }}>
                         </i>
                     </button>
-                    {/* {afficherParagraphe ? '' : ''}   */}
                 </div> 
                 <div className={`item ${afficherParagraphe ? 'itemOpen' : 'itemClose'}`}>
                     <p className='pAbout'>{content}</p>
-                    {/* {afficherParagraphe && (
-                        <p className={`pAbout ${afficherParagraphe ? 'pOpen' : 'pClose'}`}>{content}</p>
-                    )}            */}
                 </div>
             </div>  
     )

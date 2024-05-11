@@ -14,17 +14,18 @@ import { useState } from "react";
 
     return (
     <section className='sectionCarrousel'>
-      <div>
+      
       {data.map((item, index) => {
         return (
-          <img src={item} key={index} alt="photo du logement" className={slide === index ? "slide" : "slide slideHidden"}/>
+          <div className='divPictureIndex'> 
+            <img src={item} key={index} alt="photo du logement" className={slide === index ? "slide" : "slide slideHidden"}/>
+            <p className={slide === index ? "index" : "index indexHidden"}>{index+1}/{data.length}</p>
+          </div>
         );
       })}
-      </div>
-          {/* <div className='divChevron' > */}
+      
             <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
             <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
-          {/* </div> */}
       
     </section>
     )

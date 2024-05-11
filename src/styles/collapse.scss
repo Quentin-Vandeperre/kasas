@@ -38,18 +38,13 @@
             background-color: #F6F6F6;
             overflow: hidden;
             margin: 0;
-            transition: 1s;
+            transition: 0.5s;
         }
 
         & .itemOpen {
             max-height: 200px;
             height: auto;
             
-        }
-
-        & .item.itemOpen {
-            
-            transition:  1s;
         }
 
         & .pAbout {
