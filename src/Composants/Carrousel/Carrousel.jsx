@@ -17,7 +17,7 @@ import { useState } from "react";
       
       {data.map((item, index) => {
         return (
-          <div className='divPictureIndex'> 
+          <div className='divPictureIndex' key={index}> 
             <img src={item} key={index} alt="photo du logement" className={slide === index ? "slide" : "slide slideHidden"}/>
             <p className={slide === index ? "index" : "index indexHidden"}>{index+1}/{data.length}</p>
           </div>

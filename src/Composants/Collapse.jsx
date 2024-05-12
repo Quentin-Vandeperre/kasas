@@ -8,7 +8,6 @@ function Collapse({title, content}) {
 
         const toggleAfficherParagraphe = () => {
             setAfficherParagraphe(!afficherParagraphe);
-
         }
         
         const toggleRotation = () => {
@@ -28,7 +27,7 @@ function Collapse({title, content}) {
                         </i>
                     </button>
                 </div> 
-                <div className={`item ${afficherParagraphe ? 'itemOpen' : 'itemClose'}`}>
+                <div className={`item ${afficherParagraphe ? 'itemOpen' : ''}`}>
                     <p className='pAbout'>{content}</p>
                 </div>
             </div>  
