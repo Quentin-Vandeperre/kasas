@@ -1,16 +1,16 @@
 import '../../styles/Carrousel/carrousel.scss'
 import { useState } from "react";
 
-    function Carrousel ({ data }){
-        const [slide, setSlide] = useState(0);
+  function Carrousel ({ data }){
+    const [slide, setSlide] = useState(0);
+        
+    const nextSlide = () => {
+      setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    };
 
-        const nextSlide = () => {
-        setSlide(slide === data.length - 1 ? 0 : slide + 1);
-        };
-
-        const prevSlide = () => {
-        setSlide(slide === 0 ? data.length - 1 : slide - 1);
-        };
+    const prevSlide = () => {
+      setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    };
 
     return (
     <section className='sectionCarrousel'>
